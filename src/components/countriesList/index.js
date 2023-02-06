@@ -9,7 +9,7 @@ export function CountriesList (props) {
           return (
             <div className="list-group-item list-group-item-action">
               <img src="" alt="country flag" /><br/>
-              <Link to={country.alpha3Code}>{country.name.common}</Link>
+              <Link className="list-group-item-action" to={country.alpha3Code}>{country.name.common}</Link>
             </div>
           );
         })}
