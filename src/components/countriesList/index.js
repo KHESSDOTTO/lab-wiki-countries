@@ -7,7 +7,7 @@ export function CountriesList (props) {
       <div className="list-group">
         {props.countries.map(country => {
           return (
-            <div className="list-group-item list-group-item-action">
+            <div className="list-group-item list-group-item-action" key={country.alpha}>
               <img src="" alt="country flag" /><br/>
               <Link className="list-group-item-action" to={country.alpha3Code}>{country.name.common}</Link>
             </div>
