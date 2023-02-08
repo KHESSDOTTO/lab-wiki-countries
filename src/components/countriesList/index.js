@@ -8,7 +8,8 @@ export function CountriesList (props) {
         {props.countries.map(country => {
           return (
             <div className="list-group-item list-group-item-action" key={country.alpha}>
-              <img src="" alt="country flag" /><br/>
+              <img src={`https://flagpedia.net/data/flags/icon/72x54/${country.alpha2Code.toLowerCase()}.png`} alt={`${country.name.common}'s flag"`} />
+              <br/>
               <Link className="list-group-item-action" to={country.alpha3Code}>{country.name.common}</Link>
             </div>
           );

@@ -8,6 +8,7 @@ export function CountriesDetails (props) {
   foundCountry.borders.forEach(cE => arrOfBorderNames.push(cE));
   return (
     <div className="col-7">
+      <img src={`https://flagpedia.net/data/flags/icon/72x54/${foundCountry.alpha2Code.toLowerCase()}.png`} alt={`${foundCountry.name.common}'s flag"`} />
       <h1>{foundCountry.name.common}</h1>
       <table className="table">
         <thead></thead>
